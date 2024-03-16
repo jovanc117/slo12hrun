@@ -1,0 +1,3 @@
+Ime:		Geslo:
+urednik		urednik1
+uporabnik	uporabnik1

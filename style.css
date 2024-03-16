@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/*barve
+#8ab900 Zelena
+#f28b00 Oranžna
+#5e5e5e Siva
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4 {
+    text-align: center;
+}
+nav {
+    position: fixed;
+    background-color: #8bb900be;
+    color: #fff;
+    border-radius: 3px;
+    width: 100%;
+    z-index: 100;
+}
+#header, #nav {
+    transition: 0.3;
+}
+.navwraper {
+    display: flex;
+    padding: 10px;
+}
+.gumb {
+    background-color: #f28b00;
+    color: #fff;
+    border-radius: 5px;
+}nav ul{
+    position: relative;
+    margin: 0 auto;
+    top: 30px;
+}
+nav ul li {
+    display: inline;
+    list-style-type: none;
+}
+li a{
+    text-decoration: none;
+    padding: 20px;
+    color: #fff;
+}
+nav img {
+    height: 80px;
+}
+.navigacija {
+    padding: 20px;
+}
+header {
+    background-image: url(slike/foto-01.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+header div {
+    color: #fff;
+    width: 100%;
+}
+
+.besedilo p, h1, h2, h3, h4 {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+main p{
+    padding: 10px 50px;
+}
+main h2 {
+    margin-top: 50px;
+    padding-bottom: 10px;
+}
+.sponzorji {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.sponzorji img {
+    height: 70px;
+    margin: 0 auto;
+}
+.trasa {
+    padding-top: 30px;
+    background-color: #f28b00;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+.trasa img {
+    width: 100%;
+}
+.prijava {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.prijava p {
+    text-align: center;
+}
+.prijava a{
+    margin:0 auto;
+    padding: 20px;
+    text-decoration: none;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #8ab900;
+    
+}
+footer img {
+    height: 30px;
+    width: 30px;
+}
+.besedilop {
+    text-align: center;
+}
+iframe {
+    margin-top: 30px;
+}
+
+
+form {
+display: flex;
+justify-content: center;
+align-items: center; 
+flex-direction: column;
+margin:30px 0;
+background-color: #f28b00;
+}
+form div {
+    margin: 2px;
+}
+#galerija img {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    margin: 10px 0;
+    z-index: 0;
+}
+#galerija-nav img{
+    width: 12vw;
+    margin: 0 auto;
+    z-index: 0;
+    padding: 5px;
+}
+.galerija-con {
+    width: 50vw;
+    margin: 10px auto;
+}
+form p {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+form {
+    display: flex;
+    padding-bottom: 20px;
+}
+.form, input,select,p,button{
+    padding: 10px;
+    margin: 0;
+}
+input, select, button{
+    width: 400px;
+}
+div input{
+    width: auto;
+}
+form button{
+    margin-top: 50px;
+    background-color: #8ab900;
+    color: black;
+    font-size: 1.2em;
+}
+.plcilo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+header div h1{
+    max-width: 100%;
+    background-color:  rgba(0, 0, 0, 0.5);
+    padding: 30px;
+}
+.success, .error{
+    width: 100%;
+    border: 1px solid;
+    margin: 10px auto;
+    padding:15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    text-align: center;
+    display: inline-block;
+  }
+.error {
+  color: #D8000C;
+  background-color: #FFBABA;
+  }
+.err {
+    color: #D8000C;
+    background-color: #FFBABA;
+    }
+.success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+  }
+.nastanitev{
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+}
+.nastanitevv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prijavab {
+    padding: 10px;
+    border-radius: 3px;
+    background-color: lightgray;
+    color: black;
+    text-decoration: none;
+    font-size: .75em;
+    margin: 0 5vw;
+}
+.hamburger {
+    display: none;
+    width: 20px;
+    height: 16px;
+    cursor: pointer;
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    z-index: 1000;
+}
+.hamburger span {
+    position: absolute;
+    background: white;
+    height: 2px;
+    width: 20px;
+    transition: 0.2s;
+    z-index: 100;
+    z-index: 1000;
+}
+span.b1 {
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+span.b2 {
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+span.b3 {
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+.change span.b1{
+    top: 50%;
+    transform:translateX(-50%) rotate(45deg);
+}
+.change span.b2{
+    opacity: 0;
+}
+.change span.b3{
+    top: 50%;
+    transform:translateX(-50%) rotate(-45deg);
+}
+.s_menu a{
+    display: flex;
+    flex-direction: column;
+    padding: 10px ;
+    margin: 5px 75px 5px 20px;
+    background-color: #8ab900;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+.s_menu a:hover {
+    background-color: #97c901;
+}
+.s_menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding-top: 70px;
+    height: 100vh;
+    background-color: #f28900de;
+    width: 0px;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 999;
+}
+.s_menu {
+    list-style-type: none;
+}
+.change .s_menu {
+    width: 300px;
+}
+.center-gumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.galerija-m {
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 100vw;
+    display: none;
+}
+.galerija-mob {
+    width: 100%;
+}
+.galerija-m img {
+    width: 100%;
+}
+footer a {
+    text-decoration: none;
+    margin: 0 10px 10px 10px;
+}
+.lb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0,0); 
+    transition: transform 150ms ease-in-out;
+    /*transform-origin: right; */
+    padding: 2em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    background: #00000098;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1001;
+  }
+  .lb:target {
+    transform: scale(1,1); 
+  }
+  .lb img {
+      width: 80%;
+      padding: 1em;
+  }
+  .ai{
+      width: 100%;
+      position: absolute;
+      left: 10vw;
+      right: 10vw;
+  }
+  .close {
+    position: absolute;
+    right: 8vw;
+    top: 3em;
+    width: 2em;
+    height: 2em;
+    text-decoration: none;
+    color:#fff;
+    opacity: .8;
+  }
+@media only screen and (max-width:999px) {
+    /* For tablets: */
+    iframe {
+        width: 500px;
+    }
+    nav ul {display: none;}
+    nav img {
+        margin-right: 15px;
+    }
+    .hamburger {
+        display: block;
+        top: 40px;
+        right: 40px;
+    }
+    .galerija-m {
+        display: block;
+        padding: 0 50px;
+    }
+    .galerija-con {display: none;}
+    .galerija-lb {display: none;}
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    input, select, button {
+        width: 300px;
+    }
+    .sponzorji img {
+        height: 50px;
+        max-width: 100%;
+    }
+    iframe {
+        width: 100%;
+    }
+    nav img {
+        height: 50px;
+        margin-right: 15px;
+    }
+    nav ul{display: none;}
+    .hamburger {
+        display: block;
+        top: 25px;
+        right: 25px;
+    }
+    .galerija-m {
+        display: block;
+        padding: 0;
+        width: 100%;
+    }
+    .galerija-con {display: none;}
+    .galerija-lb {display: none;}
+    .change .s_menu {
+        width: 100%;
+    }
+    .slick-next:before {
+        right: 1em;
+        position: relative;
+    }
+    .slick-prev:before {
+        position: relative;
+        right: -1em;
+    }
+    .slick-prev {
+        z-index: 1;
+        left: 0;
+    }
+    .slick-next{
+        right: 0;
+    }
+    .slick-prev:before, .slick-next:before {
+        /*color: #f28b00;*/
+        /*color: #8ab900;*/
+        color: #fff;
+    }
+    header {
+        height: 50vh;
+    }
+  }
